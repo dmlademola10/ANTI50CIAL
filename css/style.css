@@ -1,0 +1,212 @@
+html,
+body {
+    margin: 0;
+    background: #ffffff;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.link {
+    transition: 0.5s;
+    border-radius: 0.5rem;
+}
+
+.drop-links {
+    position: absolute;
+    top: 58px;
+    transition: 0.5s;
+    height: 0px;
+    overflow: hidden;
+    transition-property: height;
+    width: -webkit-fill-available;
+    background-color: inherit;
+    border-radius: 0 0 0.5rem 0.5rem;
+    display: none;
+}
+
+.link_btn {
+    display: none;
+    cursor: pointer;
+}
+
+.top-menu {
+    display: flex;
+    font-size: xx-large;
+    padding: 10px;
+    user-select: none;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    background-color: rgba(122, 235, 255, 0.6);
+    width: -webkit-fill-available;
+}
+
+.footer {
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    flex: 3;
+    font-size: medium;
+}
+
+.drop-links div,
+.links div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    cursor: pointer;
+}
+
+.drop-links div:hover,
+.links div:hover {
+    background-color: rgb(122, 235, 255);
+}
+
+.title-box {
+    flex: 1;
+}
+
+.intro {
+    color: whitesmoke;
+    background-image: url('../images/bg_one.jpeg');
+    background-color: rgb(122, 235, 255);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    font-size: 3vw;
+    text-align: center;
+    user-select: none;
+}
+
+.intro span {
+    color: rgb(122, 235, 255);
+}
+
+.education {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-line div {
+    margin: 10px 2px;
+}
+
+.circle {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid rgb(122, 235, 255);
+}
+
+.line {
+    flex: 1;
+    height: 2px;
+    background-color: rgb(122, 235, 255);
+}
+
+.item {
+    /* background-color: whitesmoke;
+    border-radius: 0.5rem; */
+    padding: 5px;
+    /* border: 2px dashed grey; */
+    flex: 1;
+    text-align: justify;
+    margin: 5px;
+    font-size: x-large;
+}
+
+.section-name {
+    border-top: 1px solid #e5ebf2;
+    border-bottom: 1px solid #e5ebf2;
+    text-align: center;
+    padding-top: 58px;
+}
+
+.timespan {
+    font-style: italic;
+    color: gray;
+}
+
+.skills {
+    display: flex;
+}
+
+.skills div {
+    text-align: center;
+    flex: 1;
+}
+
+.skills div span {
+    font-size: xx-large;
+}
+
+section {
+    padding: 50px;
+}
+
+.education,
+.skills,
+.footer {
+    background-color: #f4f6f9;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+
+@media only screen and (max-width: 715px) {
+    .links {
+        display: none;
+    }
+
+    .link_btn {
+        display: block;
+    }
+
+    .drop-links {
+        display: block;
+    }
+
+    section {
+        padding: 5px;
+    }
+
+    .item {
+        font-size: medium;
+    }
+
+    .skills div span {
+        font-size: large;
+    }
+}
+
+/* ::-webkit-scrollbar-track{
+  background-color: rgb(94, 95, 95);
+} */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0.3rem;
+    background-color: rgb(52, 52, 52);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(94, 95, 95);
+}
